@@ -28,14 +28,14 @@ async def start(bot, update):
             await update.reply_cached_media(
                 file_id,
                 quote=True,
-                caption = caption,
+                caption = f"{file_name} \n @allinonemoviesforallin,
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    '🔰 OUR GROUP 🔰', url="https://t.me/allinonemoviesforallin"
                                 )
                         ]
                     ]
@@ -47,14 +47,14 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
-    ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data="help")
-    ]]
-    
+        InlineKeyboardButton('🔰 JOIN GROUP 🔰', url='https://t.me/allinonemoviesforallin'),
+        InlineKeyboardButton('BX_BOTS🤖', url ='https://t.me/Movie_channel_0')
+
+
+
+        
+
+   
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_message(
